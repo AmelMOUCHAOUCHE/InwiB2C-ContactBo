@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Formulaire Utilisateur">
+        <div class="slds-p-around_medium">
+            <lightning-combobox label="Civilité" value={civilite} options={civiliteOptions} onchange={handleCiviliteChange}></lightning-combobox>
+            <lightning-input label="Nom" value={nom} onchange={handleNomChange}></lightning-input>
+            <lightning-input label="Prenom" value={prenom} onchange={handlePrenomChange}></lightning-input>
+            <lightning-input label="Email" type="email" value={email} onchange={handleEmailChange}></lightning-input>
+            <lightning-input label="Username"  value={username} onchange={handleUsernameChange}></lightning-input>
+            <template if:true={showProduitField}>
+                <lightning-combobox label="Produit" value={produit} options={produitOptions} onchange={handleProduitChange}></lightning-combobox>
+            </template>
+        </div>
+    </lightning-card>
+</template>

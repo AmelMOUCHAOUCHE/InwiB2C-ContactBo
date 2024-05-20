@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Type d'Utilisateur" icon-name="standard:user"></lightning-card>
+    <div class="UserType"></div>
+    <lightning-combobox
+        name="typeUtilisateur"
+        label="Type d'Utilisateur"
+        placeholder="Sélectionner le type d'utilisateur"
+        options={options}
+        onchange={handleTypeChange}>
+    </lightning-combobox>
+</template>
